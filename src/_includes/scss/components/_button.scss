@@ -1,0 +1,28 @@
+button {
+    background-color: $yellow;
+    color: $white;
+    line-height: 167%;
+    //padding: $size14 0;
+    height: 3.3125rem;
+    width: 11.25rem;
+    transition: background-color ease-in-out 0.5s;
+
+    &.open-menu-btn {
+        width: calc(100% - #{$size32} * 2);
+        position: absolute;
+        bottom: $size24;
+
+        @include mq-tablet {
+            width: 11.25rem;
+            position: static;
+            bottom: unset;
+            margin-left: auto;
+        }
+    }
+
+    &:hover {
+        background-color: $white;
+        color: $yellow;
+        border: 3px solid $yellow;
+    }
+}

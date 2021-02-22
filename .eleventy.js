@@ -1,11 +1,11 @@
-
 module.exports = function(eleventyConfig) {
-    eleventyConfig.addPassthroughCopy("css");
-    eleventyConfig.addPassthroughCopy("images");
-    eleventyConfig.addPassthroughCopy("js");
+    // So 11ty can use the files inside these folders
+    //eleventyConfig.addPassthroughCopy("src/css");
+    eleventyConfig.addPassthroughCopy("src/images");
+    eleventyConfig.addPassthroughCopy("src/js");
 
     return {
-        // Change output directory so can host on Github Pages
+        // Change output directory so can host on Github Pages. In Github change the 'source' to /docs
         dir: {
             input: "src",
             output: "docs"

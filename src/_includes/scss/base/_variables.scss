@@ -1,0 +1,42 @@
+// Breakpoints
+@mixin mq-tablet {
+    @media screen and (min-width: 690px) {
+        @content;
+    }
+}
+
+@mixin mq-desktop {
+    @media screen and (min-width: 940px) {
+        @content;
+    }
+}
+
+@mixin mq-desktop-lg {
+    @media screen and (min-width: 1260px) {
+        @content;
+    }
+}
+
+// Colours
+$yellow: hsl(40, 97%, 58%);
+$dark-navy: hsl(216, 17%, 35%);
+$dim-grey: hsl(217, 12%, 62%);
+$light-grey: hsl(212, 41%, 93%);
+$snow: hsl(214, 37%, 96%);
+$light-yellow: hsl(39, 100%, 94%);
+$white: #fff;
+$grey-menu: hsl(215, 14%, 23%);
+
+// Typography
+$font-family-base: 'Lexend Deca', sans-serif;
+$font-family-headers: 'Space Mono', monospace;
+
+// Misc Shared
+$size14: 0.875rem;
+$size15: 0.9375rem;
+$size18: 1.125rem;
+$size22: 1.375rem;
+$size24: 1.5rem;
+$size32: 2rem;
+$size40: 2.5rem;
+$size64: 4rem;

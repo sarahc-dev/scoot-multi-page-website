@@ -1,0 +1,27 @@
+// Homepage Hero
+.hero {
+    background-image: url('/images/patterns/right-arrow.svg'),
+        url('/images/images/home-hero-mobile.jpg');
+    background-repeat: no-repeat;
+    background-position: -18.5rem calc(100% - 1.5rem), top center;
+    background-size: 115%, cover;
+    padding: 7.1875rem $size32 11.25rem;
+
+    @media screen and (min-width: 490px) {
+        background-image: url('/images/patterns/right-arrow.svg'),
+            url('/images/images/home-hero-tablet.jpg');
+    }
+}
+
+.hero-container {
+    max-width: 380px;
+    margin: 0 auto;
+
+    @media screen and (min-width: 490px) {
+        max-width: 74.61%;
+    }
+}
+
+.hero-text {
+    padding: $size24 0 calc(#{$size32} + 2px);
+}

@@ -1,0 +1,23 @@
+h1,
+h2,
+h3,
+h4,
+nav,
+button {
+    font-family: $font-family-headers;
+}
+
+h1,
+.hero p {
+    color: $white;
+}
+
+p {
+    font-family: $font-family-base;
+    line-height: 167%;
+}
+
+h1 {
+    font-size: $size40;
+    line-height: 1;
+}

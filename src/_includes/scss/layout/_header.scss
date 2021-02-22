@@ -1,0 +1,99 @@
+header {
+    position: relative;
+    padding: $size22 $size32;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include mq-tablet {
+        padding: $size22 $size40;
+        justify-content: space-between;
+    }
+
+    @include mq-desktop {
+        padding-left: 10.5625rem;
+        padding-right: 10.3125rem;
+    }
+}
+
+header > a {
+    line-height: 0;
+}
+
+.logo {
+    @include mq-tablet {
+        height: 142.8%;
+        width: 142.8%;
+    }
+}
+
+.hamburger,
+.close {
+    position: absolute;
+    left: $size32;
+    cursor: pointer;
+
+    @include mq-tablet {
+        display: none;
+    }
+}
+
+.close {
+    left: #{$size32} + 1px;
+}
+
+// add noscroll class to body
+// add opacity to background
+nav {
+    position: absolute;
+    top: 64px;
+    //left: 0;
+    left: -4rem;
+    background-color: $grey-menu;
+    width: 0;
+    //width: 16rem;
+    height: calc(100vh - 64px);
+    padding: $size64 $size32 0;
+    overflow: hidden;
+
+    @include mq-tablet {
+        position: static;
+        background-color: unset;
+        width: 71.84%;
+        height: auto;
+        padding: unset;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    @include mq-desktop-lg {
+        width: 84.5%;
+    }
+
+    a {
+        display: block;
+        color: $light-grey;
+        font-weight: 700;
+        font-size: $size18;
+        line-height: 139%;
+        text-decoration: none;
+        // position: absolute;
+        // left: -4rem;
+        @include mq-tablet {
+            color: $dim-grey;
+            font-size: $size15;
+            line-height: 167%;
+            display: inline;
+        }
+    }
+
+    a + a {
+        margin-top: $size24;
+
+        @include mq-tablet {
+            margin-top: 0;
+            margin-left: $size32;
+        }
+    }
+}

@@ -1,15 +1,17 @@
+// Makes Sass work
+
 const path = require('path')
 const sass = require('node-sass-promise')
 const CleanCSS = require('clean-css')
 
 const inputFile = path.join(__dirname, '../_includes/scss/main.scss')
-const outputFile = path.join(__dirname, '../src/css/styles.css')
+const outputFile = path.join(__dirname, '../css/styles.css')
 
 
 module.exports = class {
   data() {
     return {
-      permalink: 'src/css/styles.css',
+      permalink: 'css/styles.css',
       eleventyExcludeFromCollections: true
     }
   }
