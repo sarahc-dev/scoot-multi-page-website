@@ -1,0 +1,29 @@
+footer {
+    background-color: $dark-grey;
+    padding: $size64 0 5.5rem;
+}
+
+.footer-links a {
+    display: block;
+    color: $dim-grey;
+}
+
+.footer-links a:hover {
+    color: $yellow;
+}
+
+.footer-links a + a {
+    margin-top: 1rem;
+}
+
+.footer-links a:nth-child(2) {
+    padding-top: 1.59rem;
+}
+
+.footer-social-links {
+    padding-top: 5.3125rem;
+}
+
+.footer-social-links a + a {
+    margin-left: $size24;
+}

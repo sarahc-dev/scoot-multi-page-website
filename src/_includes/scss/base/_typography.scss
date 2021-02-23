@@ -3,6 +3,7 @@ h2,
 h3,
 h4,
 nav,
+footer,
 button {
     font-family: $font-family-headers;
 }
@@ -14,10 +15,17 @@ h1,
 
 p {
     font-family: $font-family-base;
-    line-height: 167%;
 }
 
 h1 {
     font-size: $size40;
     line-height: 1;
+}
+
+a {
+    text-decoration: none;
+
+    &:hover {
+        color: $yellow;
+    }
 }
