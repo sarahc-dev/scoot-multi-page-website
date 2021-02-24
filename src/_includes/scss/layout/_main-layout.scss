@@ -2,6 +2,15 @@
     display: none;
 }
 
+.sr-only {
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
 body {
     min-height: 100vh;
     font-size: $size15;

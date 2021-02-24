@@ -1,0 +1,51 @@
+.signup {
+    background-color: $dark-navy;
+    color: $white;
+    padding: 5.5rem $size32;
+    position: relative;
+    overflow: hidden;
+    background-image: url('/images/icons/semi-circles.svg');
+    background-repeat: no-repeat;
+    background-position: -30px bottom;
+
+    @include mq-tablet {
+        padding: 3.875rem 9.75rem;
+    }
+}
+
+.signup h2 {
+    padding-bottom: $size40;
+}
+
+.icon--app-store {
+    height: 40px;
+    width: 113.57px;
+}
+
+.icon--google-play {
+    height: 40px;
+    width: 130px;
+    margin-left: 9.12px;
+}
+
+.icon--semi-circles {
+    width: 1150px;
+    height: 1150px;
+    position: absolute;
+    bottom: -470px;
+    left: -600px;
+
+    @include mq-tablet {
+        bottom: -488px;
+        left: -224px;
+    }
+}
+
+.icon--circle {
+    width: 347px;
+    height: 347px;
+    opacity: 0.1;
+    position: absolute;
+    bottom: -170px;
+    right: -170px;
+}

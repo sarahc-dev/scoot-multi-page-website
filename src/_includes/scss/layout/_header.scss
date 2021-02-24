@@ -20,13 +20,14 @@ header > a {
     line-height: 0;
 }
 
-.logo {
+.logo .icon {
     height: 20px;
     width: 75.5px;
+    color: $dark-navy;
 
     @include mq-tablet {
-        height: 142.8%;
-        width: 142.8%;
+        height: 28.56px;
+        width: 107.82px;
     }
 }
 

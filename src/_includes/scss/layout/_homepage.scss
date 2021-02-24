@@ -25,3 +25,112 @@
 .hero-text {
     padding: $size24 0 calc(#{$size32} + 2px);
 }
+
+.features {
+    padding: 7.5rem $size32;
+
+    h3 {
+        padding: $size24 0;
+    }
+
+    p {
+        color: $dim-grey;
+    }
+
+    .feature + .feature {
+        padding-top: $size48;
+    }
+
+    @include mq-tablet {
+        padding: 7.625rem 6.125rem 9rem;
+
+        .feature {
+            display: flex;
+            text-align: left;
+        }
+
+        img {
+            height: 96px;
+            width: 96px;
+            margin-right: 5rem;
+        }
+
+        h3 {
+            padding-top: 0;
+        }
+    }
+
+    @include mq-desktop {
+        padding: 10rem 10.3125rem 12.5rem;
+
+        .feature {
+            display: inline-block;
+            width: 350px;
+        }
+
+        h3 {
+            padding: $size40 0 1.6875rem;
+        }
+
+        .feature + .feature {
+            padding-top: 0;
+            padding-left: 1.875rem;
+        }
+    }
+}
+
+.learn-more {
+    padding: 0 $size32 7.5rem;
+
+    img {
+        border-radius: 100%;
+    }
+
+    h2 {
+        color: $dark-navy;
+        padding: 3.5rem 0 $size32;
+    }
+
+    p {
+        color: $dim-grey;
+        padding-bottom: $size32;
+    }
+
+    .learn-more-section + .learn-more-section {
+        padding-top: 7.5rem;
+    }
+
+    @include mq-tablet {
+        padding: 0 6.125rem 6.5rem;
+
+        h2 {
+            padding: 3.5rem 3.5rem $size40;
+        }
+
+        p {
+            padding-bottom: $size40;
+        }
+    }
+
+    @include mq-desktop {
+        padding: 0 10.25rem 12.5rem;
+
+        .learn-more-section {
+            display: flex;
+            justify-content: space-between;
+            text-align: left;
+
+            &:nth-child(odd) img {
+                order: 2;
+            }
+        }
+
+        .learn-more-text {
+            width: 445px;
+        }
+
+        h2 {
+            padding: 4.125rem 0 $size24;
+        }
+    }
+}

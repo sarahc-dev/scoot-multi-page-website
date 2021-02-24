@@ -22,6 +22,30 @@ h1 {
     line-height: 1;
 }
 
+h2 {
+    font-size: $size32;
+    line-height: 1;
+    letter-spacing: -1.42857px;
+
+    @include mq-tablet {
+        font-size: $size48;
+        letter-spacing: -2.14286px;
+    }
+}
+
+h3 {
+    font-size: 1.25rem;
+    line-height: 140%;
+    letter-spacing: -0.892857px;
+    color: $dark-navy;
+
+    @include mq-tablet {
+        font-size: $size24;
+        line-height: 117%;
+        letter-spacing: -1.07143px;
+    }
+}
+
 a {
     text-decoration: none;
 

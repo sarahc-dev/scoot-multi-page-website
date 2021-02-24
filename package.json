@@ -14,8 +14,12 @@
   },
   "dependencies": {
     "clean-css": "^5.1.0",
+    "glob": "^7.1.6",
     "node-sass": "^5.0.0",
     "node-sass-promise": "^1.0.0",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "svg-sprite": "^1.5.0",
+    "util": "^0.12.3",
+    "vinyl": "^2.2.1"
   }
 }
